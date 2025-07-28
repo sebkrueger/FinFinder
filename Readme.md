@@ -15,7 +15,15 @@ It features a simple Streamlit-based user interface that allows interaction with
 
 ## 🚀 Installation & Getting Started
 
-_This section will be updated with setup instructions for local development and usage._
+Insert into the .env your key for ChatGPT-API and config values based on the .env.template file.
+
+Install all dependencies:   
+`pip install scikit-learn`   
+`pip install openai`
+
+start the app and use it in the browser:   
+`streamlit run FinFinderV3.py`
+
 
 ---
 
@@ -25,7 +33,11 @@ The project currently uses the following technologies:
 
 - **Streamlit** – Web UI framework for prototyping interactive apps
 - **OpenAI GPT models** – Base for natural language processing and fish identification logic
-- *(More to be added)*
+- **text-embedding-3-small** - Convert Userinput and data into embeddings for semantic search
+- **cosine_similarity** - Calculate similarity between embeddings for semantic search
+- **Coqui** - Neural network for text-to-speech conversion
+- **whisper** - Neural network for speech-to-text conversion
+- **LangGraph** only for some tests
 
 ---
 
@@ -35,7 +47,8 @@ The project currently uses the following technologies:
 FinFinder/
 ├── FirstPrototype.py                                    # Streamlit-based text input prototype
 ├── presentation/                                        # Contains pitch deck and future final presentation
-│   ├── CHat Fin Finder Pitch 2025-05-15.pdf             # Initial project pitch
-│   └── ...                                              # Final presentation slides to be added
+│   ├── Chat Fin Finder Pitch 2025-05-15.pdf             # Initial project pitch
+│   └── Chat Fin Finder Final 2025-05-15.pdf             # Chat Fin Finder final presentation          
 ├── README.md                                            # Project description (this file)
-└── ...                                                  # Further modules and components
+├── fishdata                                             # Test scripts to load data form external sources
+└── FinFinderV3.py                                       # Streamlit-based text input working agent
