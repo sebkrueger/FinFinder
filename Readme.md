@@ -1,5 +1,7 @@
 # FinFinder
 
+URL of this repository: https://github.com/sebkrueger/FinFinder
+
 **FinFinder** is a language-based chatbot designed to identify and classify fish species found in German waters — 
 including both the North Sea and Baltic Sea, as well as inland freshwater habitats. 
 
@@ -11,6 +13,10 @@ This project is a **demo application** exploring the integration of various AI a
 A first prototype (`FirstPrototype.py`) can be found in the root directory of this repository. 
 It features a simple Streamlit-based user interface that allows interaction with the agent via text input.
 
+There will be some test files and tryout of text2speech and speech2text in mainfolder.
+There is some test with the langgraph_agent that turns out as a dead-end.
+
+The final version of a running agent will you find in file `FinFinderV3.py`.
 ---
 
 ## 🚀 Installation & Getting Started
